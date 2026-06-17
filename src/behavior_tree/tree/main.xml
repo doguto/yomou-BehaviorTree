@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root BTCPP_format="4" main_tree_to_execute="BehaviorTree">
-  <BehaviorTree ID="BehaviorTree">
-    <DebugLog message="Hello, Behavior Tree!"/>
-  </BehaviorTree>
+  	<BehaviorTree ID="BehaviorTree">
+		<Sequence>
+			<DebugLog message="Hello, Behavior Tree!"/>
+
+			<Script code="skip := false"/>
+			<DebugLog message="This message will not be skipped" _skipIf="skip"/>
+			<Script code="skip := true"/>
+			<DebugLog message="This message will be skipped" _skipIf="skip"/>
+		</Sequence>
+  	</BehaviorTree>
 
   <!-- Description of Node Models (used by Groot) -->
 	<TreeNodesModel>
