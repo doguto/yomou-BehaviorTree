@@ -17,3 +17,4 @@ BehaviorTree 編のリポジトリ
   - BehaviorTree.Cpp を submodule として追加
 - 2026-06-17:
   - ros2 での behavior_tree 実行環境の仮構築
+  - tick() の概要把握
